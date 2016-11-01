@@ -31,4 +31,11 @@ public class RomanNumeralTests {
 
         Assert.assertEquals("IV", actual);
     }
+
+    @Test
+    public void convertGivenFiveShouldReturnV() {
+        String actual = romanNumeral.convert(5);
+
+        Assert.assertEquals("V", actual);
+    }
 }
