@@ -1,4 +1,5 @@
 public enum romanNumerals {
+    TEN("X",10),
     FIVE("V",5),
     FOUR("IV",4),
     ONE("I",1);

@@ -39,4 +39,10 @@ public class RomanNumeralTests {
         String actual = romanNumeral.convert(6);
         Assert.assertEquals("VI", actual);
     }
+
+    @Test
+    public void convertGivenTenShouldReturnX() {
+        String actual = romanNumeral.convert(10);
+        Assert.assertEquals("X", actual);
+    }
 }
