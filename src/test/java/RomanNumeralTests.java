@@ -2,11 +2,10 @@ import junit.framework.Assert;
 import org.junit.Test;
 
 public class RomanNumeralTests {
+    private RomanNumeral romanNumeral = new RomanNumeral();
 
     @Test
     public void convertGivenOneShouldReturnI() {
-        RomanNumeral romanNumeral = new RomanNumeral();
-
         String actual = romanNumeral.convert(1);
 
         Assert.assertEquals("I", actual);
@@ -14,10 +13,22 @@ public class RomanNumeralTests {
 
     @Test
     public void convertGivenTwoShouldReturnII() {
-        RomanNumeral romanNumeral = new RomanNumeral();
-
         String actual = romanNumeral.convert(2);
 
         Assert.assertEquals("II", actual);
+    }
+
+    @Test
+    public void convertGivenThreeShouldReturnIII() {
+        String actual = romanNumeral.convert(3);
+
+        Assert.assertEquals("III", actual);
+    }
+
+    @Test
+    public void convertGivenFourShouldReturnIV() {
+        String actual = romanNumeral.convert(4);
+
+        Assert.assertEquals("IV", actual);
     }
 }
