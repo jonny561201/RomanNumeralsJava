@@ -45,4 +45,16 @@ public class RomanNumeralTests {
         String actual = romanNumeral.convert(10);
         Assert.assertEquals("X", actual);
     }
+
+    @Test
+    public void convertGiven15ShouldReturnXV(){
+        String actual = romanNumeral.convert(15);
+        Assert.assertEquals("XV",actual);
+    }
+
+    @Test
+    public void convertGiven45ShouldReturnXLV() {
+        String actual = romanNumeral.convert(45);
+        Assert.assertEquals("XLV", actual);
+    }
 }
