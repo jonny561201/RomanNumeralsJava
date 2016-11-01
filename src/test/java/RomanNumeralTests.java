@@ -38,4 +38,11 @@ public class RomanNumeralTests {
 
         Assert.assertEquals("V", actual);
     }
+
+    @Test
+    public void convertGivenSixShouldReturnVI() {
+        String actual = romanNumeral.convert(6);
+
+        Assert.assertEquals("VI", actual);
+    }
 }
