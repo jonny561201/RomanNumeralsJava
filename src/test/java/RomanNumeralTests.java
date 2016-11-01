@@ -11,4 +11,13 @@ public class RomanNumeralTests {
 
         Assert.assertEquals("I", actual);
     }
+
+    @Test
+    public void convertGivenTwoShouldReturnII() {
+        RomanNumeral romanNumeral = new RomanNumeral();
+
+        String actual = romanNumeral.convert(2);
+
+        Assert.assertEquals("II", actual);
+    }
 }
