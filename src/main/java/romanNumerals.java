@@ -1,5 +1,6 @@
 public enum romanNumerals {
     FIVE("V",5),
+    FOUR("IV",4),
     ONE("I",1);
 
     public String roman;

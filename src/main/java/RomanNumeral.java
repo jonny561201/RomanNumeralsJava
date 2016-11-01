@@ -1,22 +1,18 @@
-
 public class RomanNumeral {
 
     public String convert(int arabicNumeral) {
-        if (arabicNumeral == 1) {
-            return "I";
+
+        String romanResponse = "";
+        for(romanNumerals numeral : romanNumerals.values()) {
+            if (arabicNumeral >= numeral.arabic) {
+                while (arabicNumeral >= numeral.arabic) {
+                    arabicNumeral -= numeral.arabic;
+                    romanResponse += numeral.roman;
+
+                }
+            }
         }
-        if (arabicNumeral == 2) {
-            return "II";
-        }
-        if (arabicNumeral == 3) {
-            return "III";
-        }
-        if (arabicNumeral == 4) {
-            return "IV";
-        }
-        if (arabicNumeral == 5) {
-            return "V";
-        }
-        return "VI";
+        return romanResponse;
     }
 }
+
