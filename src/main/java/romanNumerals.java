@@ -1,7 +1,7 @@
 public enum romanNumerals {
-    ONETHOUSAND("M",1000),
-    NINEHUNDRED("CM",900),
-    ONEHUNDRED("C",100),
+    ONE_THOUSAND("M",1000),
+    NINE_HUNDRED("CM",900),
+    ONE_HUNDRED("C",100),
     NINETY("XC",90),
     FIFTY("L",50),
     FORTY("XL",40),

@@ -57,4 +57,10 @@ public class RomanNumeralTests {
         String actual = romanNumeral.convert(45);
         Assert.assertEquals("XLV", actual);
     }
+
+    @Test
+    public void ConvertGiven946ShouldReturnCMXLVI() {
+        String actual = romanNumeral.convert(946);
+        Assert.assertEquals("CMXLVI", actual);
+    }
 }

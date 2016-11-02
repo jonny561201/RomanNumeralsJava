@@ -8,7 +8,6 @@ public class RomanNumeral {
                 while (arabicNumeral >= numeral.arabic) {
                     arabicNumeral -= numeral.arabic;
                     romanResponse += numeral.roman;
-
                 }
             }
         }
